@@ -1,0 +1,39 @@
+body{
+    background-color: lightblue;
+    font-family: cursive;
+}
+
+h1{
+    background-color: grey;
+    color: white;
+    text-align: center;
+}
+
+h3{
+    color:red;
+    text-decoration-line: underline;
+}
+
+h4{
+    text-align: center;
+}
+
+p{
+    background-color: lightcoral;
+    background-size: inherit;
+    width:fit-content;
+}
+
+li{
+    font-style: oblique;
+}
+
+div{
+    display: inline-block;
+    background-color: khaki;
+    text-align: center;
+}
+
+#edad{
+    text-align: center;
+}
