@@ -1,0 +1,214 @@
+/* Css para todos */
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+html, body{
+    height: 100%;
+}
+
+header{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    padding: 5px 5%;
+    background-color: black;
+}
+article{
+    min-height: 100%;
+}
+footer{
+    background-color: black;
+    height: 20px;
+    color: white;
+    text-align: center;
+}
+.menu li, a{
+    font-family: 'Ubuntu', sans-serif;  
+    font-weight: 200;
+    font-size: 20px;
+    color: white;
+    text-decoration: none;
+ }
+ .menu li{
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+.contact{
+    color: black;
+    font-family:fantasy;
+    background: #ffffff;
+    background: radial-gradient(circle farthest-corner at center center, #ffffff 0%, #8f8f8f 100%);
+    padding: 10px;
+    border-radius: 120px;
+}
+
+.contact:hover{
+    background: #22e0c9;
+    background: radial-gradient(circle farthest-corner at center center, #22e0c9 0%, #8f8f8f 100%);
+    cursor: pointer;
+}
+
+.banner{
+    background-color: #22e0c9;
+    text-align: center;
+    height: 40px;
+}
+
+.cartelbanner{
+    font-size: 30px;
+    font-family: 'Ubuntu', sans-serif;
+}
+.nt{
+    cursor: not-allowed;
+}
+.negrita{
+    color:black;
+}
+/* Fin de Css para Todos */
+/*------------------------------------------------------------------------------------------------------------------------*/
+/* Index // Terminado para primera entrega */
+.cuerpoindex{ 
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.cuerpoindex2{
+    display: flex;
+    justify-content: center; 
+}
+.info1{
+    display: flex;
+    height:350px;
+    width: 60%;
+    margin: 10px;
+    border-radius: 50px;
+    border: 7px double #000000;
+    box-shadow: 10px 10px 30px 0px rgba(0,0,0,0.63);
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 20px;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+}
+
+.info2{
+    height:350px;
+    width: 30%;
+    margin: 10px;  
+    border-radius: 50px;
+    border: 7px double #000000;
+    box-shadow: 10px 10px 30px 0px rgba(0,0,0,0.63);
+    padding: 25px;
+    padding-top: 10px;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 18px;
+    text-align: center;
+}
+.padreformato{
+    height: 100%;
+}
+.formatito{
+    text-align: start;
+    display: flex;
+    height: 80%;
+    align-items: center;
+}
+.ultcamp{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    height:250px;
+    width: 40%;
+    padding: 10px;
+    margin: 30px;
+    border-radius: 50px;
+    border: 7px double #000000;
+    box-shadow: 10px 10px 30px 0px rgba(0,0,0,0.63);
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 20px;
+}
+.cuadrocamp{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    margin: 20px;
+}
+/* Fin de Index */ 
+/*------------------------------------------------------------------------------------------------------------------------*/
+/* Equipos // Terminado para la primera entrega */ 
+.contenedorpadre{
+    display: flex;
+    flex-wrap: wrap;
+    padding: auto;
+    justify-content: center;
+}
+.contequipo{
+    width: 250px;
+    height: 250px;
+    margin: 15px;
+    box-shadow: 10px 10px 30px 0px rgba(0,0,0,0.63);
+    background: #ffffff;
+    background: radial-gradient(ellipse farthest-corner at top center, #ffffff 0%, #000000 150%);
+    border: 5px solid #050505;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #000000;
+    border-radius: 31px;
+    font-family: 'Ubuntu', sans-serif;
+    
+}
+
+.contequipo img{
+    height:65% ;
+    width: 65%;
+    margin: 5px;
+}
+
+.contequipo:hover{
+    background: #22e0c9;
+    background: radial-gradient(ellipse farthest-corner at top center, #22e0c9 0%, #000000 80%);
+    color: whitesmoke;
+    cursor: pointer;
+}
+.contequipo img:hover{
+    height:75% ;
+    width: 75%;
+    margin: 5px;
+}
+.contequipo p{
+    font-size: 20px;
+}
+/* Fin de equipos. */
+/*------------------------------------------------------------------------------------------------------------------------*/
+/* Otros */
+@media screen and (max-width: 1000px) {
+    .cuerpoindex{ 
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .info1{
+        height:400px;
+        width: 80%;
+        margin: 10px;
+    }
+    
+    .info2{
+        height:300px;
+        width: 80%;
+        margin: 10px;  
+    }
+    .ultcamp{
+        height:250px;
+        width: 80%;
+        margin: 10px;  
+    }
+}
+/*------------------------------------------------------------------------------------------------------------------------*/
