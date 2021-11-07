@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tarea JavaSript
+    </title>
+</head>
+<body>
+    <script>
+        var distancia;
+        var array = [0,0,0,0,0];
+        var mayor=-9999;
+        var posm=-1;
+
+        distancia = prompt('Ingrese la distancia a recorrer: ', ' ');
+        if(distancia<0){
+            document.write('Numero no valido!!!');
+        }
+        if(distancia>0 && distancia<=1000){
+            document.write('Recorrer en pie.');
+        }
+        if(distancia>1000 && distancia<=10000){
+            document.write('Recorrer en Bicicleta.');
+        }
+        if(distancia>10000 && distancia<=30000){
+            document.write('Recorrer en Colectivo.');
+        }
+        if(distancia>30000 && distancia<=100000){
+            document.write('Recorrer en Auto.');
+        }
+        if(distancia>100000){
+            document.write('Recorrer en Avion.');
+        }
+        document.write('<br>');
+        document.write('<br>');
+
+        for(var i=0;i<5;i++){
+            array[i] = prompt('Ingrese el Numero ' + (i+1) + ' :');
+            if(array[i]>mayor){
+                mayor=array[i];
+                posm=i;
+            }
+        }
+        document.write('El numero mayor ingresado es: '+ mayor+' y se ingreso en la posicion : ' + (posm+1) + '.')
+
+    </script>
+</body>
+</html>
