@@ -1,0 +1,50 @@
+/* Ejercicio 1*/ 
+.cajapadre{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 5px solid grey;
+    width: 300px;
+    height: 400px;
+}
+
+.boton {
+    padding: 15px 20px;
+    font-size: 20px;
+    border-radius: 20px;
+    border: 2px solid black;
+    color: black;
+    margin: 10px;
+    font-weight: bold;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+.alternar{
+    background-color: white;
+}
+.alternar.activo{
+    background-color: pink;
+}
+.alternar1{
+    background-color: red;
+}
+.alternar1.activo {
+    background-color: pink;
+    
+}
+.alternar2{
+    background-color: blue;
+}
+.alternar2.activo {
+    background-color: lightskyblue;
+}
+.alternar3{
+    background-color: green;
+}
+.alternar3.activo {
+    background-color: lightgreen;
+}
+
+/* Ejercicio 2 */

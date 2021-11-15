@@ -1,50 +1,144 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tarea JavaSript
-    </title>
+    <title>Tarea JS parte2</title>
+    <link rel="stylesheet" href="estilos.css">
+
 </head>
+
 <body>
+    <h2>Ejercicio 1</h2>
+    <div class="cajapadre alternar">
+        <button class="boton rojo alternar1">Modo 1</button>
+        <button class="boton azul alternar2">Modo 2</button>
+        <button class="boton verde alternar3">Modo 3</button>
+    </div>
+
     <script>
-        var distancia;
-        var array = [0,0,0,0,0];
-        var mayor=-9999;
-        var posm=-1;
+        var alternar1 = document.getElementsByClassName('alternar1')[0];
+        var alternar2 = document.getElementsByClassName('alternar2')[0];
+        var alternar3 = document.getElementsByClassName('alternar3')[0];
+        var item = document.getElementById('cajapadre');
+        var valor1 = 0;
+        var valor2 = 0;
+        var valor3 = 0;
 
-        distancia = prompt('Ingrese la distancia a recorrer: ', ' ');
-        if(distancia<0){
-            document.write('Numero no valido!!!');
-        }
-        if(distancia>0 && distancia<=1000){
-            document.write('Recorrer en pie.');
-        }
-        if(distancia>1000 && distancia<=10000){
-            document.write('Recorrer en Bicicleta.');
-        }
-        if(distancia>10000 && distancia<=30000){
-            document.write('Recorrer en Colectivo.');
-        }
-        if(distancia>30000 && distancia<=100000){
-            document.write('Recorrer en Auto.');
-        }
-        if(distancia>100000){
-            document.write('Recorrer en Avion.');
-        }
-        document.write('<br>');
-        document.write('<br>');
+        alternar1.addEventListener('click', function (e) {
+            e.target.classList.toggle('activo');
+            if (valo1r == 0) {
+                item.style = 'background-color: pink;';
+                valor1 = 1;
+            } else {
+                item.style = 'background-color: white;';
+                valor1 = 0;
+            }
+        });
+        alternar2.addEventListener('click', function (e) {
+            e.target.classList.toggle('activo');
+            if (valor2 == 0) {
+                item.style = 'background-color: lightskyblue;';
+                valor2 = 1;
+            } else {
+                item.style = 'background-color: white;';
+                valor2 = 0;
+            }
 
-        for(var i=0;i<5;i++){
-            array[i] = prompt('Ingrese el Numero ' + (i+1) + ' :');
-            if(array[i]>mayor){
-                mayor=array[i];
-                posm=i;
+        });
+        alternar3.addEventListener('click', function (e) {
+            e.target.classList.toggle('activo');
+            if (valor3 == 0) {
+                item.style.backgroundColor = 'lightgreen';
+                valor3 = 1;
+            } else {
+                item.style = 'background-color: white;';
+                valor3 = 0;
+            }
+
+        });
+    </script>
+
+    <h2>Ejercicio 2</h2>
+    <textarea placeholder="Texto." class="area" onkeyup="contador();" id="texto"></textarea>
+    <div id="contador"></div>
+
+
+    <script>
+        function contador() {
+            setTimeout(function () {
+                var caract = document.getElementById('texto');
+                var cantidad = caract.value.length;
+                document.getElementById('contador').innerHTML = 'Cantiadad de Caracteres: ' + cantidad;
+            });
+        }
+    </script>
+
+    <h2>Ejercicio 3</h2>
+
+    <script>
+        var j;
+        var alumnos = [
+
+            {
+
+                nombre: 'Juan Gomez',
+
+                nota: 7
+
+            }, {
+
+                nombre: 'Pedro Rodriguez',
+
+                nota: 4
+
+            }, {
+
+                nombre: 'Roxana García',
+
+                nota: 8
+
+            }, {
+
+                nombre: 'Luciano Lopez',
+
+                nota: 5
+
+            }, {
+
+                nombre: 'Fernanda Gimenez',
+
+                nota: 6
+
+            }, {
+
+                nombre: 'Florencia Martinez',
+
+                nota: 10
+
+            }, {
+
+                nombre: 'Raul Sanchez',
+
+                nota: 7
+
+            }, {
+
+                nombre: 'Sandra Figueroa',
+
+                nota: 8
+
+            }
+        ];
+        for (j = 0; j <= 10; j++) {
+            if (alumnos[j].nota >= 7) {
+                document.write('El alumno ' + alumnos[j].nombre + ' aprobo con ' + alumnos[j].nota + '.')
+                document.write('<br>');
             }
         }
-        document.write('El numero mayor ingresado es: '+ mayor+' y se ingreso en la posicion : ' + (posm+1) + '.')
-
     </script>
 </body>
+
 </html>
