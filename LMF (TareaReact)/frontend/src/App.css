@@ -1,38 +1,68 @@
-.App {
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+html, body{
+  height: 100%;
+}
+
+header{
+  display: flex;
+  justify-content:space-between;
+  align-items: center;
+  padding: 5px 5%;
+  background-color: black;
+}
+article{
+  min-height: 94%;
+}
+footer{
+  background-color: black;
+  min-height: 30px;
+  color: white;
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.menu li, a{
+  font-family: 'Ubuntu', sans-serif;  
+  font-weight: 200;
+  font-size: 20px;
   color: white;
+  text-decoration: none;
+}
+.menu li{
+  display: inline-block;
+  padding: 0px 20px;
 }
 
-.App-link {
-  color: #61dafb;
+.contact{
+  color: black;
+  font-family:fantasy;
+  background: #ffffff;
+  background: radial-gradient(circle farthest-corner at center center, #ffffff 0%, #8f8f8f 100%);
+  padding: 10px;
+  border-radius: 120px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.contact:hover{
+  background: #22e0c9;
+  background: radial-gradient(circle farthest-corner at center center, #22e0c9 0%, #8f8f8f 100%);
+  cursor: pointer;
+}
+
+.banner{
+  background-color: #22e0c9;
+  text-align: center;
+  height: 40px;
+}
+
+.cartelbanner{
+  font-size: 30px;
+  font-family: 'Ubuntu', sans-serif;
+}
+.nt{
+  cursor: not-allowed;
+}
+.negrita{
+  color:black;
 }

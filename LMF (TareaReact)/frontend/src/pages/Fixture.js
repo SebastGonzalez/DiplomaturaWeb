@@ -1,8 +1,13 @@
 import React from 'react';
+//import '../styles/components/pages/Contact.css';
 
 const Home = (props) => {
     return (
-        <div>Under Construction.</div>
+        <article>
+            <div className="banner">
+                <p className="cartelbanner">Fixture (Under Construction.)</p>
+            </div>
+        </article>
     );
 }
 export default Home;

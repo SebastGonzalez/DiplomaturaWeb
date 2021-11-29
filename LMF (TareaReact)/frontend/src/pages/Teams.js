@@ -1,4 +1,5 @@
 import React from 'react';
+import '../styles/components/pages/Teams.css';
 
 const Teams = (props) => {
     return (

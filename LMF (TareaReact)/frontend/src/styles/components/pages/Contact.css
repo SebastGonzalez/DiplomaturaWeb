@@ -1,0 +1,45 @@
+.padrecontacto{
+    height: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.formu{
+    background-color:lightcyan;
+    height: fit-content;
+    width: 400px;
+    padding: 20px;
+    display: flex;
+    flex-direction:row;
+    border-radius: 50px;
+    border: 7px double #000000;
+    box-shadow: 10px 10px 30px 0px rgba(0,0,0,0.63);
+}
+.formulario{
+    width: 400px;
+}
+.formulario label{
+    display: inline-block;
+    vertical-align: top;
+    width: 40%;
+}
+.item{
+    font-size: 23px;
+    font-family: 'Ubuntu', sans-serif;
+}
+input,textarea{
+    font-size: 20px;
+    width: 180px;
+    margin-top: 2px;
+}
+textarea{
+    resize: none;
+    height: 150px;
+}
+select{
+    font-size: 18px;
+}
+.boton{
+    width: 100px;
+    background-color: white;
+}

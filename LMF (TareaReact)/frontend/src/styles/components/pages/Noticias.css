@@ -1,0 +1,33 @@
+.padrenoticia{
+    display: flex;
+    flex-direction: column;
+    align-content: center;padding-top: 5px;
+}
+.noticia{
+    display: flex;
+    flex-direction: row;
+    align-self: center;
+    background-color: wheat;
+    width: 96%;
+    margin: 4px;
+    padding: 6px;
+    border-radius: 50px;
+    border: 5px solid #000000;
+}
+.noticia img{
+    margin: 6px;
+}
+.contenido{
+    margin: 5px;
+}
+.contenido h2{
+    margin-bottom: 15px;
+}
+.textnot{
+    margin-bottom: 20px;
+}
+.fechanot{
+    display: flex;
+    flex-direction: row-reverse;
+    margin-right: 7px;
+}
