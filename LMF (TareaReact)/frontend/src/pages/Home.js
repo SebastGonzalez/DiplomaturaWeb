@@ -1,5 +1,6 @@
 import React from 'react';
 import '../styles/components/pages/Home.css';
+import campeon from'../imagenes/Teams/Globant_Emerald.png' ;
 
 const Home = (props) => {
     return (
@@ -31,7 +32,7 @@ const Home = (props) => {
                     <div className="ultcamp">
                         <p>Ultimo Campeon:</p>
                         <div className="cuadrocamp">
-                            <img src="imagenes/Teams/Globant_Emerald.png" alt="Logo Globant_Emerald"/>
+                            <img src={campeon} alt="Logo Globant_Emerald"/>
                             <p>Globant Emerald</p>
                         </div>
                     </div>

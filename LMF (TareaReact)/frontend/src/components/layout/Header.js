@@ -1,9 +1,10 @@
 import{Link} from 'react-router-dom';
+import logo from '../../imagenes/LogoFlowBlanco.png';
 
 const Header = (props) => {
     return (
         <header>
-            <Link to="/home"><img className="logo" src="imagenes/LogoFlowBlanco.png" alt="Logo Liga Master Flow" /></Link>
+            <Link to="/home"><img className="logo" src={logo} alt="Logo Liga Master Flow"/></Link>
             <nav>
                 <ul className="menu">
                     <li><Link to="/noticias">Noticias</Link></li>

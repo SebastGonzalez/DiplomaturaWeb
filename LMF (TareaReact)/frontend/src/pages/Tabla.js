@@ -1,5 +1,17 @@
 import React from 'react';
 import '../styles/components/pages/Tabla.css';
+import boca from '../imagenes/Teams/Boca_Juniors.png';
+import casla from '../imagenes/Teams/CASLA_Esports.png';
+import ebro from '../imagenes/Teams/EBRO_Gaming.png';
+import globant from '../imagenes/Teams/Globant_Emerald.png';
+import maycam from '../imagenes/Teams/Maycam_Evolve_Gaming.png';
+import naguara from '../imagenes/Teams/Naguara_Team.png';
+import river from '../imagenes/Teams/River_Plate_Gaming.png';
+import savage from '../imagenes/Teams/Savage_Esports.png';
+import stone from '../imagenes/Teams/Stone_Movistar.png';
+import uala from '../imagenes/Teams/Uala_New_Pampas.png';
+import undead from '../imagenes/Teams/Undead_Gaming.png';
+import wap from '../imagenes/Teams/WAP_Esports.png';
 
 const Tabla = (props) => {
     return (
@@ -11,7 +23,7 @@ const Tabla = (props) => {
                 <div className="posicion">
                     <div className="circulo"></div>
                     <div className="logoequipo">
-                        <img src="imagenes/Teams/Boca_Juniors.png" alt="Logo CASLA" />
+                        <img src={boca} alt="Logo CASLA" />
                     </div>
                     <div className="nombreequipo">
                         <p>Boca Juniors </p>
@@ -26,7 +38,7 @@ const Tabla = (props) => {
                 <div className="posicion">
                     <div className="circulo"></div>
                     <div className="logoequipo">
-                        <img src="imagenes/Teams/CASLA_Esports.png" alt="Logo CASLA" />
+                        <img src={casla} alt="Logo CASLA" />
                     </div>
                     <div className="nombreequipo">
                         <p>San Lorenzo</p>
@@ -41,7 +53,7 @@ const Tabla = (props) => {
                 <div className="posicion">
                     <div className="circulo"></div>
                     <div className="logoequipo">
-                        <img src="imagenes/Teams/EBRO_Gaming.png" alt="Logo CASLA" />
+                        <img src={ebro} alt="Logo CASLA" />
                     </div>
                     <div className="nombreequipo">
                         <p>EBRO Gaming </p>
@@ -56,7 +68,7 @@ const Tabla = (props) => {
                 <div className="posicion">
                     <div className="circulo"></div>
                     <div className="logoequipo">
-                        <img src="imagenes/Teams/Globant_Emerald.png" alt="Logo CASLA" />
+                        <img src={globant} alt="Logo CASLA" />
                     </div>
                     <div className="nombreequipo">
                         <p>Globant Emerald </p>
@@ -71,7 +83,7 @@ const Tabla = (props) => {
                 <div className="posicion">
                     <div className="circulo"></div>
                     <div className="logoequipo">
-                        <img src="imagenes/Teams/Maycam_Evolve_Gaming.png" alt="Logo CASLA" />
+                        <img src={maycam} alt="Logo CASLA" />
                     </div>
                     <div className="nombreequipo">
                         <p>Maycam Evolve Gaming </p>
@@ -86,7 +98,7 @@ const Tabla = (props) => {
                 <div className="posicion">
                     <div className="circulo"></div>
                     <div className="logoequipo">
-                        <img src="imagenes/Teams/Naguara_Team.png" alt="Logo CASLA" />
+                        <img src={naguara} alt="Logo CASLA" />
                     </div>
                     <div className="nombreequipo">
                         <p>Naguara Team </p>
@@ -101,7 +113,7 @@ const Tabla = (props) => {
                 <div className="posicion">
                     <div className="circulo"></div>
                     <div className="logoequipo">
-                        <img src="imagenes/Teams/River_Plate_Gaming.png" alt="Logo CASLA" />
+                        <img src={river} alt="Logo CASLA" />
                     </div>
                     <div className="nombreequipo">
                         <p>River Plate </p>
@@ -116,7 +128,7 @@ const Tabla = (props) => {
                 <div className="posicion">
                     <div className="circulo"></div>
                     <div className="logoequipo">
-                        <img src="imagenes/Teams/Savage_Esports.png" alt="Logo CASLA" />
+                        <img src={savage} alt="Logo CASLA" />
                     </div>
                     <div className="nombreequipo">
                         <p>Savage Esports </p>
@@ -131,7 +143,7 @@ const Tabla = (props) => {
                 <div className="posicion">
                     <div className="circulo"></div>
                     <div className="logoequipo">
-                        <img src="imagenes/Teams/Stone_Movistar.png" alt="Logo CASLA" />
+                        <img src={stone} alt="Logo CASLA" />
                     </div>
                     <div className="nombreequipo">
                         <p>Stone Movistar </p>
@@ -146,7 +158,7 @@ const Tabla = (props) => {
                 <div className="posicion">
                     <div className="circulo"></div>
                     <div className="logoequipo">
-                        <img src="imagenes/Teams/Uala_New_Pampas.png" alt="Logo CASLA" />
+                        <img src={uala} alt="Logo CASLA" />
                     </div>
                     <div className="nombreequipo">
                         <p>Uala New Pampas </p>
@@ -161,7 +173,7 @@ const Tabla = (props) => {
                 <div className="posicion">
                     <div className="circulo"></div>
                     <div className="logoequipo">
-                        <img src="imagenes/Teams/Undead_Gaming.png" alt="Logo CASLA" />
+                        <img src={undead} alt="Logo CASLA" />
                     </div>
                     <div className="nombreequipo">
                         <p>Undead Gaming </p>
@@ -176,7 +188,7 @@ const Tabla = (props) => {
                 <div className="posicion">
                     <div className="circulo"></div>
                     <div className="logoequipo">
-                        <img src="imagenes/Teams/WAP_Esports.png" alt="Logo CASLA" />
+                        <img src={wap} alt="Logo CASLA" />
                     </div>
                     <div className="nombreequipo">
                         <p>Wap Esports </p>
