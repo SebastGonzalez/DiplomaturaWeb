@@ -1,5 +1,6 @@
 import React from 'react';
 import '../styles/components/pages/Noticias.css';
+import imagen from'../../src/imagenes/Teams/Globant_Emerald.png' ;
 
 const Noticias = (props) => {
     return (
@@ -10,7 +11,7 @@ const Noticias = (props) => {
             <div className="padrenoticia">
                 <div className="noticia">
                     <div className="imagnot">
-                        <img src="imagenes/Teams/Globant_Emerald.png" alt="foto noticia"/>
+                        <img src={imagen} alt="Logo Globant_Emerald" />
                     </div>
                     <div className="contenido">
                         <h2> Titulo de la noticia</h2>
@@ -34,7 +35,7 @@ const Noticias = (props) => {
                 </div>
                 <div className="noticia">
                     <div className="imagnot">
-                        <img src="imagenes/Teams/Globant_Emerald.png" alt="foto noticia"/>
+                        <img src={imagen} alt="Logo Globant_Emerald" />
                     </div>
                     <div className="contenido">
                         <h2> Titulo de la noticia 3</h2>

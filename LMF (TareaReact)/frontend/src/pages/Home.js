@@ -1,6 +1,6 @@
 import React from 'react';
 import '../styles/components/pages/Home.css';
-import campeon from'../imagenes/Teams/Globant_Emerald.png' ;
+import campeon from'../../src/imagenes/Teams/Globant_Emerald.png' ;
 
 const Home = (props) => {
     return (
